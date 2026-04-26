@@ -1,2 +1,2 @@
 
-E:@catppuccin_status_gpu #[fg=#cba6f7]#[fg=#11111b,bg=#cba6f7]󰢮 #[fg=#{gpu_fg_color},bg=#{gpu_bg_color}] #(#{d:current_file}/../utils/gpu_percentage.sh)#[fg=#{gpu_bg_color}] 
+E:@catppuccin_status_gpu #[fg=#cba6f7]#[fg=#11111b,bg=#cba6f7]󰢮 #[fg=#{gpu_fg_color},bg=#{gpu_bg_color}] #($CATPPUCCIN_PLUGIN_DIR/../utils/gpu_percentage.sh)#[fg=#{gpu_bg_color}] 

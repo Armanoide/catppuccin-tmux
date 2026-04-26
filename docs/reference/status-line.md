@@ -119,6 +119,21 @@ set -g @plugin 'tmux-plugins/tmux-cpu'
 run '~/.tmux/plugins/tpm/tpm'
 ```
 
+### Apple Silicon (macOS)
+
+On Apple Silicon Macs (M1/M2/M3/M4), use the built-in `top` utility instead of `tmux-cpu`:
+
+**Configure:**
+
+```sh
+run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+
+set -g @catppuccin_cpu_source "apple"
+set -agF status-right "#{E:@catppuccin_status_cpu}"
+```
+
+No special privileges are required.
+
 ## RAM module
 
 **Requirements:** This module depends on [tmux-cpu](https://github.com/tmux-plugins/tmux-cpu/tree/master).
@@ -135,6 +150,21 @@ set -agF status-right "#{E:@catppuccin_status_ram}"
 set -g @plugin 'tmux-plugins/tmux-cpu'
 run '~/.tmux/plugins/tpm/tpm'
 ```
+
+### Apple Silicon (macOS)
+
+On Apple Silicon Macs (M1/M2/M3/M4), use the built-in `memory_pressure` utility instead of `tmux-cpu`:
+
+**Configure:**
+
+```sh
+run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+
+set -g @catppuccin_ram_source "apple"
+set -agF status-right "#{E:@catppuccin_status_ram}"
+```
+
+No special privileges are required.
 
 ## GPU module
 

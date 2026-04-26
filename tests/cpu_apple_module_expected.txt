@@ -1,0 +1,2 @@
+
+E:@catppuccin_status_cpu #[fg=#f9e2af]#[fg=#11111b,bg=#f9e2af] #[fg=#{cpu_fg_color},bg=#{cpu_bg_color}] #($CATPPUCCIN_PLUGIN_DIR/../utils/cpu_percentage.sh)#[fg=#{cpu_bg_color}] 

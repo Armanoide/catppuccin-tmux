@@ -1,0 +1,2 @@
+
+E:@catppuccin_status_ram #[fg=#f9e2af]#[fg=#11111b,bg=#f9e2af] #[fg=#{ram_fg_color},bg=#{ram_bg_color}] #($CATPPUCCIN_PLUGIN_DIR/../utils/ram_percentage.sh)#[fg=#{ram_bg_color}] 
