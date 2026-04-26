@@ -155,6 +155,33 @@ run '~/.tmux/plugins/tpm/tpm'
 
 **Note:** GPU usage data is provided by tmux-cpu. Systems without supported GPU monitoring may display "No GPU" or similar output from tmux-cpu.
 
+### Apple Silicon (macOS)
+
+On Apple Silicon Macs (M1/M2/M3/M4), `tmux-cpu` cannot monitor GPU usage. Use the built-in `powermetrics` utility instead:
+
+**Configure:**
+
+```sh
+run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+
+set -g @catppuccin_gpu_source "apple"
+set -agF status-right "#{E:@catppuccin_status_gpu}"
+```
+
+**Sudoers setup:** `powermetrics` requires administrator privileges. Add this line to a file in `/etc/sudoers.d/` (e.g., `/etc/sudoers.d/tmux-gpu`):
+
+```
+your_username ALL=(root) NOPASSWD: /usr/bin/powermetrics
+```
+
+Make sure the file has permissions `440`:
+
+```sh
+sudo chmod 440 /etc/sudoers.d/tmux-gpu
+```
+
+**Note:** Without the sudoers entry, the GPU module will display `0`.
+
 ## VRAM module
 
 **Requirements:** This module depends on [tmux-cpu](https://github.com/tmux-plugins/tmux-cpu/tree/master).
