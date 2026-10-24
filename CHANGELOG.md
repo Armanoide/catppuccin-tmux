@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.3.2](https://github.com/catppuccin/tmux/compare/v2.3.1...v2.3.2) (2026-10-14)
+
+
+### Fixed
+
+* **600:** apply default message style correctly ([#606](https://github.com/catppuccin/tmux/issues/606)) ([027ed4d](https://github.com/catppuccin/tmux/commit/027ed4d650c9c562751cb30ae99dbdcfa6293f53))
+
+## [2.3.1](https://github.com/catppuccin/tmux/compare/v2.3.0...v2.3.1) (2026-09-21)
+
+
+### Fixed
+
+* **#600:** command and messages regression after 3.7 update ([#602](https://github.com/catppuccin/tmux/issues/602)) ([19093fb](https://github.com/catppuccin/tmux/commit/19093fb39cabbe001314b643e0650162b4b915b0))
+
 ## [2.3.0](https://github.com/catppuccin/tmux/compare/v2.2.2...v2.3.0) (2026-04-08)
 
 
